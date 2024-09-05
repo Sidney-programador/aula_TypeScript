@@ -1,0 +1,78 @@
+Exercício TypeScript
+
+Introdução so TypeScript
+
+1ª Complete a frase:
+
+TypeScript allows developers to add types to JavaScript.
+
+2ª Complete a frase:
+
+JavaScript is a loosely typed language.
+
+Introdução ao TypeScript
+
+1ª O compilador TypeScript pode ser configurado com qual arquivo?
+
+tsconfig.json
+
+Tipos simples TypeScript
+
+1ª Há duas maneiras principais pelas quais o TypeScript atribui um tipo:
+
+Explicit
+Implicit
+
+2ª Crie uma variável "firstName", tipo string usando o tipo implícito:
+
+let firstName = "Dylan";
+
+3ª Crie uma variável "firstName", tipo string usando o tipo Explicit:
+
+let firstName: string = "Dylan";
+
+Tipos especiais TypeScript
+
+1ª Crie uma variável "myVar" vazia e desabilite a verificação de tipo:
+
+let myVar: any;
+
+2ª Crie uma variável "myVar" vazia e especifique que ela deve ser de um tipo desconhecido:
+
+let myVar: unknown;
+
+Matrizes TypeScript
+
+1ª Impedir que a matriz seja alterada:
+
+const names: readonly string[] = ["Dylan"];
+
+Tuplas TypeScript
+
+1ª A ordem dos tipos de valor não importa para tuplas:
+
+False
+
+2ª Defina ourTuple como string e boolean, nessa ordem:
+
+let ourTuple: [string, boolean];
+
+Tipos de objeto TypeScript
+
+1ª Adicione os tipos corretos para o objeto abaixo:
+
+const car: { type: string, model: string, year: number } = {
+type: "Toyota",
+model: "Corolla",
+year: 2009
+};
+
+2ª Especifique que a segunda propriedade, chamada modelo, deve ser opcional:
+
+enum myEnum {
+myFirstConst,
+mySecondConst
+};
+
+
+
