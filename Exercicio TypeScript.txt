@@ -1,6 +1,6 @@
 Exercício TypeScript
 
-Introdução so TypeScript
+Introdução ao TypeScript
 
 1ª Complete a frase:
 
