@@ -74,5 +74,134 @@ myFirstConst,
 mySecondConst
 };
 
+Enumeração TypeScript
 
+1ª Complete a frase:
 
+TypeScript allows developers to add types to JavaScript.
+
+2ª Crie uma enumeração chamada myEnum, com 2 constantes (myFirstConst, mySecondConst) com os valores de string "first" e "second":
+
+enum myEnum {
+myFirstConst = "first",
+mySecondConst = "second"
+};
+
+Aliases e Interfaces do TypeScript
+
+1ª Crie um Type Alias ​​para uma string, chamada carType:
+
+type carType = string
+
+2ª Crie uma interface chamada myInterface, com a propriedade myProp como uma string:
+
+interface my Interface {
+myProp: string
+
+3ª Estenda a interface myInterface do último exercício e adicione uma propriedade myExtProp como um número:
+
+interface myExtInterface extends myInterface {
+  myExtProp: number
+
+Tipos de união Type Script
+
+1ª Especifique que o parâmetro "myVar" para a função pode ser uma string ou um número:
+
+function myFunc (myVar: string | number) { 
+  console.log(myVar)
+}
+
+Funcões TypeScript
+
+1ª Crie uma função que retorne a string "Aprender é divertido!", com o tipo de retorno definido explicitamente:
+
+function myFunc(): string {
+  return "Learning is Fun!";
+}
+
+2ª Crie uma função que especificamente não retorne um valor:
+
+function myFunc(): void {
+console.log("Learning is Fun!");
+}
+
+3ª Crie uma função com 2 parâmetros (myVar1 e myVar2), que são ambos strings:
+
+function myFunc (myVar1: string, myVar2: string) {
+  return (myVar1 + myVar2);
+}
+
+4ª Crie uma função com 2 parâmetros (myVar1 e myVar2, nessa ordem), que são ambos strings.
+
+Especifique que myVar2 deve ser opcional:
+
+function myFunc (myVar1: string, myVar2?: string) {
+  return(myVar1 + (myVar2 || ""));
+}
+
+Conversão TypeScript
+
+1ª Converta a variável "desconhecida" myVar como uma string, usando a palavra-chave as:
+
+let myVar: unknown = "Hello world!";
+console.log((myVar as string).length);
+
+2ª Converta a variável "desconhecida" myVar como uma string, usando < >:
+
+let myVar: unknown = "Hello world!"; 
+console.log((<string>myVar).length);
+
+Classes TypeScript
+
+1ª Especifique que Person.name só pode ser acessado dentro da classe, mas que o método Person.getName() pode ser acessado em qualquer lugar:
+
+class Person {
+ private name: string;
+
+public constructor (name: string) {
+ this.name = name;
+}
+
+public getName(): string {
+ return this.name;
+  }
+}
+
+Genericos básicos do TypeScript
+
+1ª Complete o Genérico:
+
+function createPair<typex, typeY> (x: typex, y: typeY): [typex, typeY] {
+ return [x, y];
+}
+console.log(createPair<string, number>('Meaning', 42));
+
+Tipo de utilitários TypeScript
+
+1ª Declare um objeto kindPerson da interface Person, onde todas as propriedades são opcionais:
+
+interface Person {
+    age: number;
+    firstName: string;
+    lastName: string;
+}
+
+let kindPerson: Partial<Person> = {};
+
+2ª Declare um objeto kindPerson da interface Person, onde todas as propriedades são necessárias.
+
+interface Person {
+    age: number;
+    firstName: string;
+    lastName?: string;
+}
+
+let kindPerson: Required<Person> = {
+    age: 1800,
+    firstName: "Santa",
+    lastName: "Claus"
+};
+
+3ª Complete a frase:
+
+Record<string, number> is equivalent to { [key: string]: number }
